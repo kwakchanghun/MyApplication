@@ -26,9 +26,9 @@ public class ViewPagerAdapter extends FragmentStatePagerAdapter {//nodejs
         Log.i("position", String.valueOf(position));
 
         if (position == 0) {
-            return new FirstFragment(position);
+            return new CouponListFragment();
         } else {
-            return new SecondFragment(position);
+            return new StoreListFragment();
         }
     }
 

@@ -3,24 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/g_c_l_background"
     android:layout_width="match_parent"
-    android:layout_height="50sp"
+    android:layout_height="wrap_content"
     android:background="#f0f0f0f0"
     android:gravity="center"
     android:orientation="horizontal">
-
-    <TextView
-        android:id="@+id/date_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/title_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
 
     <ImageView
         android:id="@+id/profile_imageView"
@@ -32,8 +18,8 @@
     <TextView
         android:id="@+id/nickname_textview"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+
         android:layout_weight="1"
         android:gravity="center"
         android:text="@string/title_store"
@@ -51,5 +37,13 @@
         android:text="@string/title_coupon"
         android:textSize="10dp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@android:drawable/btn_default"
+        android:text="@string/title_add" />
 
 </LinearLayout>

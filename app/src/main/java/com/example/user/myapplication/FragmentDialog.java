@@ -12,13 +12,11 @@ import android.view.ViewGroup;
  * Created by user on 2018-03-14.
  */
 
-public class FragmentDialog extends android.support.v4.app.DialogFragment {
+public class FragmentDialog extends DialogFragment {
     private Fragment fragment;
 
 
-
     public FragmentDialog() {
-
     }
 
     @Override
@@ -27,14 +25,9 @@ public class FragmentDialog extends android.support.v4.app.DialogFragment {
 
         View view = inflater.inflate(R.layout.fragment_dialog, container, false);
 
-
-
         Bundle args = getArguments();
 
         String value = args.getString("key");
-
-
-
 
         /*
 
@@ -53,14 +46,11 @@ public class FragmentDialog extends android.support.v4.app.DialogFragment {
         fragment = getActivity().getSupportFragmentManager().findFragmentByTag("tag");
 
 
-
-
         // 아래 코드는 버튼 이벤트 안에 넣어야겠죠?
 
         if (fragment != null) {
 
             DialogFragment dialogFragment = (DialogFragment) fragment;
-
             dialogFragment.dismiss();
 
         }
@@ -68,7 +58,5 @@ public class FragmentDialog extends android.support.v4.app.DialogFragment {
         return view;
 
     }
-
-
 
 }

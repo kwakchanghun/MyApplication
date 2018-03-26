@@ -2,5 +2,6 @@
     <string name="app_name">My Application</string>
     <string name="title_coupon">쿠폰</string>
     <string name="title_store">업체</string>
+    <string name="title_add">발급</string>
     <string name="title_notifications">Notifications</string>
 </resources>
